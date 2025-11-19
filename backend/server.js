@@ -17,11 +17,11 @@ app.get("/", (req, res) => {
 });
 
 // routes
-import authRoutes from "./routes/authRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
 import inventoryRoutes from "./routes/inventoryRoutes.js";
 import requestRoutes from "./routes/requestRoutes.js";
 
-app.use("/api/auth", authRoutes);
+app.use("/api/user", userRoutes);
 app.use("/api/inventory", inventoryRoutes);
 app.use("/api/requests", requestRoutes);
 
